@@ -33,6 +33,12 @@ import Workapproachsection from './components/Workapproachsection.vue';
   min-height: 100vh;
 }
 
+.image {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
 .content {
   display: flex;
   flex-direction: column;
