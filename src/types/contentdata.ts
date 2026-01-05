@@ -77,7 +77,6 @@ export interface NameTitle {
   
   // Contact section type
   export interface ContactDetail {
-    logo: string;
     name: string;
     info: string;
   }

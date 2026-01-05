@@ -38,13 +38,33 @@ defineProps<{ data: WorkApproachData }>()
   gap: 6rem;
 }
 
+h3{
+  font-family: var(--font-poppins);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-thin);
+}
+
 .steps {
   display: grid;
   gap: 2rem;
   margin-top: 2rem;
 }
 
+strong{
+  font-size: var(--text-base);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--color-vintage);
+}
+
+p{
+  font-size: var(--text-base);
+  font-family: var(--font-poppins);
+  font-weight: var(--font-black);
+}
+
 small {
-  color: var(--color-grey);
+  color: var(--color-black);
+  font-size: var(--text-sm);
+  font-family: 'Courier New', Courier, monospace;
 }
 </style>

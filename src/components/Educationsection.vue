@@ -25,16 +25,27 @@ defineProps<{ data: EducationData }>()
 <style scoped>
 .edu-list {
   display: grid;
-  gap: 3rem;
 }
 
-h3 {
+h3{
+  font-size: var(--text-xl);
   font-family: var(--font-poppins);
-  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
 }
+
+p {
+  font-size: var(--text-base);
+  font-family: var(--font-inter);
+}
+
 
 span {
-  font-size: var(--text-sm);
-  color: var(--color-grey);
+  font-size: var(--text-lg);
+  font-family: var(--font-inter);
+  color: var(--color-vintage);
+  font-weight: var(--font-bold);
+  background-color: var(--color-black);
+  padding: 0.5rem .8rem;
+  border-radius: 1.5rem;
 }
 </style>

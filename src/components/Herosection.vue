@@ -10,9 +10,10 @@ defineProps<{ data: HeroData }>()
       {{ data.title }}
     </h1>
 
-    <p class="hero-desc">
+
+    <h2 class="section-desc">
       {{ data.description }}
-    </p>
+    </h2>
 
     <div class="hero-meta">
       <span
@@ -33,22 +34,36 @@ defineProps<{ data: HeroData }>()
   justify-content: center;
 }
 
+image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2;
+}
 .hero-title {
   font-family: var(--font-poppins);
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: var(--text-hero);
   font-weight: var(--font-extrabold);
 }
 
 .hero-desc {
-  margin-top: 2rem;
-  max-width: 70rem;
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
+  font-family: var(--font-inter);
   color: var(--color-grey);
+  margin-top: 1rem;
+
 }
 
 .hero-meta {
   margin-top: 3rem;
   font-size: var(--text-base);
+  font-family: 'Courier New', Courier, monospace;
   font-weight: var(--font-medium);
+  color: var(--color-vintage);
+  background: var(--color-black);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 </style>

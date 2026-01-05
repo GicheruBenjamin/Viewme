@@ -45,8 +45,22 @@ defineProps<{ data: TechSkillsData }>()
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+}
+
+@media  (max-width: 768px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+@media  (max-width: 425px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .skill {
@@ -54,12 +68,21 @@ defineProps<{ data: TechSkillsData }>()
   align-items: center;
   gap: 1.2rem;
   padding: 1.5rem;
-  border: 1px solid var(--color-grey);
+  border: 3px solid var(--color-grey);
   border-radius: 0.8rem;
 }
 
 .skill img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+}
+span{
+  font-size: var(--text-base);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  font-weight: var(--font-bold);
+  background-color: var(--color-vintage);
+  padding: 0.5rem .8rem;
+  border-radius: 1.5rem;
 }
 </style>

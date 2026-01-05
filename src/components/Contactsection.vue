@@ -14,15 +14,8 @@ defineProps<{ data: ContactData }>()
         :key="c.name"
         class="contact"
       >
-        <strong>{{ c.name }}</strong>
-        <a
-          v-if="c.info.startsWith('http')"
-          :href="c.info"
-          target="_blank"
-        >
-          {{ c.info }}
-        </a>
-        <span v-else>{{ c.info }}</span>
+        <strong>{{ c.name }}</strong> ;
+        <span>{{ c.info }}</span>
       </div>
     </div>
   </section>
@@ -33,9 +26,20 @@ defineProps<{ data: ContactData }>()
   display: grid;
   gap: 2rem;
 }
+strong{
+  font-size: var(--text-base);
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  font-weight: var(--font-bold);
+  margin-right: .2rem;
+}
 
-a {
-  color: var(--color-orange);
-  text-decoration: none;
+span{
+  font-size: var(--text-base);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 0.5rem .8rem;
+  border-radius: 1.5rem;
 }
 </style>

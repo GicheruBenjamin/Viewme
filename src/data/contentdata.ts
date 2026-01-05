@@ -12,7 +12,7 @@ import type {
 export const herodata: HeroData = {
   title: "Hi, I’m Benjamin Njuguna",
   description:
-    "Software Engineer specializing in building scalable web and mobile applications with modern technologies. I focus on clean architecture, performant code, and maintainable code.",
+    "Software Engineer specializing in building scalable applications with modern technologies. I focus on clean architecture, performant code, and maintainable code.",
   details: [
     {
       name: "Benjamin Njuguna",
@@ -118,6 +118,15 @@ export const expriencedata: ExperienceData = {
         "Collaborated with team members to deliver features efficiently",
       ],
     },
+    {
+      name: "Spiffy build",
+      title: "Chief Information Officer",
+      responsibilities: [
+        "Develop and execute strategic plans for the company",
+        "Establish systems and processes to manage the company's operations",
+        "Control and manage quality assurance processes",
+      ],
+    }
   ],
 };
 
@@ -163,7 +172,7 @@ export const WorkApproachdata: WorkApproachData = {
         {
           step : 2,
           title : "Input",
-          info : "What is being coleected if any."
+          info : "What is being collected if any."
         },
         {
           step : 3,
@@ -212,17 +221,14 @@ export const contactdata: ContactData = {
     "I am always available to discuss your project and answer any questions you may have.",
   details: [
     {
-      logo: "",
       name: "Email",
       info: "benjaminnjuguna77@gmail.com",
     },
     {
-      logo: "",
       name: "Linkedin",
       info: "https://www.linkedin.com/in/benjaminnjuguna/",
     },
     {
-      logo: "",
       name: "Github",
       info: "https://github.com/GicheruBenjamin",
     },

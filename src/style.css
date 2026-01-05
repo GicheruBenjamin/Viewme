@@ -15,11 +15,14 @@
   --color-black: #000000;
 
   /*Font sizes*/
-  --text-sm: clamp(0.875rem, 1.5vw, 1.125rem);
-  --text-base: clamp(1rem, 1.5vw, 1.25rem);
-  --text-lg: clamp(1.125rem, 1.5vw, 1.375rem);
-  --text-xl: clamp(1.25rem, 1.5vw, 1.5rem);
-  --text-2xl: clamp(1.5rem, 1.5vw, 1.75rem);
+  --text-xs: clamp(1.2rem, 1.8vw, 1.4rem);  /* 12–14px */
+  --text-sm: clamp(1.4rem, 2vw, 1.6rem);   /* 14–16px */
+  --text-base: clamp(1.6rem, 2.2vw, 1.8rem); /* 16–18px */
+  --text-lg: clamp(1.8rem, 2.5vw, 2.2rem); /* 18–22px */
+  --text-xl: clamp(2.4rem, 3vw, 3rem);     /* 24–30px */
+  --text-2xl: clamp(3rem, 4vw, 4rem);      /* 30–40px */
+  --text-3xl: clamp(3.6rem, 5vw, 5.2rem);  /* 36–52px */
+  --text-hero: clamp(4.2rem, 6vw, 6.8rem); /* Hero text */
 
   /*Font weights*/
   --font-thin: 100;
@@ -43,36 +46,31 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, p, ul {
+body {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-family: var(--font-poppins);
-  font-weight: var(--font-bold);
-}
-
 /* Layout */
 .section {
-  max-width: 110rem;
+  max-width: clamp(30rem, 90vw, 60rem);
   margin: 0 auto;
   padding: 8rem 2rem;
 }
 
 .section-title {
   font-family: var(--font-poppins);
-  font-size: var(--text-2xl);
-  font-weight: var(--font-bold);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-extrabold);
   color: var(--color-black);
   margin-bottom: 1rem;
 }
 
 .section-desc {
-  font-size: var(--text-base);
+  font-size: var(--text-xl);
+  font-family: var(--font-inter);
   color: var(--color-grey);
-  max-width: 60rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 /* Cards */
@@ -81,6 +79,7 @@ h1, h2, h3 {
   border-radius: 1rem;
   padding: 2.5rem;
   background: var(--color-white);
+  margin-bottom: 2rem;
 }
 
 /* Accent */
