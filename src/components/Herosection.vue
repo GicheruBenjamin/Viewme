@@ -15,6 +15,9 @@ defineProps<{ data: HeroData }>()
       {{ data.description }}
     </h2>
 
+    <div class="hero-img">
+      <img :src="data.imgsrc" alt="hero-img">
+    </div>
     <div class="hero-meta">
       <span
         v-for="item in data.details"
