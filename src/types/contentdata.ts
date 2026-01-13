@@ -21,7 +21,6 @@ export interface NameTitle {
   export interface HeroData {
     title: string;
     description: string;
-    imgsrc: string;
     details: NameTitle[];
   }
   
