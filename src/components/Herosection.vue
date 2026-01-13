@@ -16,7 +16,7 @@ defineProps<{ data: HeroData }>()
     </h2>
 
     <div class="hero-img">
-      <img :src="data.imgsrc" alt="hero-img">
+      <img src="/myimage.png" alt="hero-img" width="200" height="200">
     </div>
     <div class="hero-meta">
       <span

@@ -26,6 +26,15 @@ defineProps<{ data: ContactData }>()
   display: grid;
   gap: 2rem;
 }
+.contact {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .contact{
+    flex-direction: column;
+  }
+}
 strong{
   font-size: var(--text-base);
   font-family: var(--font-poppins);
@@ -41,5 +50,10 @@ span{
   background-color: var(--color-black);
   padding: 0.5rem .8rem;
   border-radius: 1.5rem;
+}
+@media  screen and (max-width: 768px) {
+  span{
+    font-size: var(--text-xs);
+  }
 }
 </style>
