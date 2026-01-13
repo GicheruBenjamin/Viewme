@@ -35,7 +35,7 @@ strong{
 }
 
 span{
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   font-family: var(--font-inter);
   color: var(--color-white);
   background-color: var(--color-black);

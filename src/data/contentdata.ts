@@ -13,7 +13,7 @@ export const herodata: HeroData = {
   title: "Hi, I’m Benjamin Njuguna",
   description:
     "Software Engineer specializing in building scalable applications with modern technologies. I focus on clean architecture, performant code, and maintainable code.",
-  imgsrc: "my__image.png",
+  imgsrc: "myimage.png",
     details: [
     {
       name: "Benjamin Njuguna",

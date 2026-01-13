@@ -43,6 +43,8 @@ image{
   left: 0;
   width: 20px;
   height: 2;
+  border-radius: 50%;
+  background-color: var(--color-vintage);
 }
 .hero-title {
   font-family: var(--font-poppins);
